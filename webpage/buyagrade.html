@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">-->
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<title>Buy Your Way to a Better Education!</title>
@@ -15,25 +15,41 @@
 		<hr />
 		
 		<h2>Give Us Your Money</h2>
+		<form action="http://httpbin.org/post" method="post"></form>
 		<dl>
 			<dt>Name</dt>
 			<dd>
-				???
+				<input type="text" name="name">
 			</dd>
 			
 			<dt>Section</dt>
 			<dd>
-				???
+				<select name="section" id="section" >
+					<option selected disabled>(Choose section:)</option>
+					<option value="MA">MA</option>
+					<option value="MB">MB</option>
+					<option value="MC">MC</option>
+					<option value="MD">MD</option>
+					<option value="ME">ME</option>
+					<option value="MF">MF</option>
+					<option value="MG">MG</option>
+					<option value="MH">MH</option>
+				</select>
 			</dd>
 			
 			<dt>Credit Card</dt>
 			<dd>
-				???
+				<input type="text" name="creditNumber"/>
+				<br/>
+				<input type="radio" name="creditType" value="visa"/>
+				Visa
+				<input type="radio" name="creditType" value="mastercard"/>
+				MasterCard
 			</dd>
 		</dl>
 		
 		<div>
-			I am a giant sucker.
+			<input type="submit" value="I am a giant sucker.">
 		</div>
 	</body>
 </html>
